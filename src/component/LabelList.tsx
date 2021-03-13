@@ -15,6 +15,7 @@ interface Data {
 interface LabelListProps<T extends Data> {
   id?: string;
   data?: Array<T>;
+  formatter?: Function;
   valueAccessor?: Function;
   clockWise?: boolean;
   dataKey?: DataKey<T>;
